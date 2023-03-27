@@ -1,0 +1,15 @@
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #0067A3;
+    height: 55px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.header__title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: white;
+}

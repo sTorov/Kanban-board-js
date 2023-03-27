@@ -1,0 +1,23 @@
+.footer{
+    display: flex;
+    align-items: center;
+    background-color: #0067A3;
+    height: 55px;
+    width: 100vw;
+    padding: 0 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer__span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+.footer__span:nth-last-child(1){
+    position: absolute;
+    right: 20px;
+}
+.footer__span:nth-last-child(2){
+    margin: 0 36px;
+}
