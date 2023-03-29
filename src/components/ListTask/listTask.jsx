@@ -10,9 +10,9 @@ class TaskList extends React.Component{
         this.ref.scrollTop = this.ref.scrollHeight;
     }
 
-    componentDidUpdate(){
-        this.ref.scrollTop = this.ref.scrollHeight;
-    }
+    // componentDidUpdate(){
+    //     this.ref.scrollTop = this.ref.scrollHeight;
+    // }
 
     render(){
         const { tasks, title, type, refTasks, onClick, onChange, mark, inputRef } = this.props;
