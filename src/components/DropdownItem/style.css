@@ -1,0 +1,12 @@
+.menu-dropdown__item{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    height: 22px;
+}
+.menu-dropdown__item__text:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.menu-dropdown__item__text:active{
+    color: gray;
+}

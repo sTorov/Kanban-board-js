@@ -1,25 +1,21 @@
 import React from "react";
-import avatar from "../../img/Avatar.svg";
+import Avatar from "../Avatar/avatar";
+import Dropdown from "../Dropdown/dropdown";
+import DropdownItem from "../DropdownItem/DropdownItem";
+import photo from "../../img/Avatar.svg";
 import "./style.css";
 
 function Menu({ onClick, menuSvg, dropDownDisplayStyle }){
     return(
         <>
             <div className="menu" onClick={onClick}>
-                <div className="menu__avatar-wrapper">
-                    <img className="menu__avatar-svg" src={avatar}/>
-                </div>
-                <img className="menu__dropdown-arrow" src={menuSvg}/>
+                <Avatar photo={photo}/>
+                <img className="menu__dropdown-arrow" src={menuSvg} alt="dropdown-arrow"/>
             </div>
-            <div className="menu-dropdown" style={dropDownDisplayStyle}>
-                <div className="menu-dropdown__arrow-top"></div>
-                <div className="menu-dropdown__item">
-                    <span className="menu-dropdown__item__text">Profile</span>
-                </div>
-                <div className="menu-dropdown__item">
-                    <span className="menu-dropdown__item__text">Log Out</span>
-                </div>
-            </div>
+            <Dropdown display={dropDownDisplayStyle}>
+                <DropdownItem value="Profile"/>
+                <DropdownItem value="Log out"/>
+            </Dropdown>
         </>
     )
 }

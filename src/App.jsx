@@ -12,7 +12,9 @@ class App extends React.Component {
     this.state = {
       menuClicked: false,
       menuSvg: arrowDown,
-      dropDownDisplayStyle: { display: "none" }
+      dropDownDisplayStyle: { display: "none" },
+      activeTaskCount: 0,
+      finishedTaskCount: 0
     }
   }
 
@@ -24,8 +26,15 @@ class App extends React.Component {
     }));
   }
 
+  setTaskCount = data => {
+    this.setState({
+      activeTaskCount: data[0].issues.length,
+      finishedTaskCount: data[data.length - 1].issues.length
+    })
+  }
+
   render(){
-    const { menuSvg, dropDownDisplayStyle } = this.state;
+    const { menuSvg, dropDownDisplayStyle, activeTaskCount, finishedTaskCount } = this.state;
 
     return (
       <>
@@ -33,8 +42,8 @@ class App extends React.Component {
                 onClick={this.onHeaderMenuClick} 
                 menuSvg={menuSvg} 
                 dropDownDisplayStyle={dropDownDisplayStyle}/>
-                <Board/>
-        <Footer/>
+                <Board countTask={this.setTaskCount}/>
+        <Footer activeTask={activeTaskCount} finishedTask={finishedTaskCount}/>
       </>
     );
   }

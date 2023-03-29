@@ -1,0 +1,19 @@
+.menu-dropdown{
+    display: block;
+    position: absolute;
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    width: 134px;
+    height: 60px;
+    top: 55px;
+    right: 14px;
+}
+
+.menu-dropdown__arrow-top{
+    border: 10px solid transparent;
+    position: absolute;
+    border-bottom-color: white;
+    left: 83px;
+    top: -15px;
+}
