@@ -1,7 +1,7 @@
 import React from "react";
 import Avatar from "../Avatar/avatar";
 import Dropdown from "../Dropdown/dropdown";
-import DropdownItem from "../DropdownItem/DropdownItem";
+import DropdownItem from "../DropdownItem/dropdownItem";
 import photo from "../../img/Avatar.svg";
 import "./style.css";
 

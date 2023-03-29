@@ -3,4 +3,5 @@
     justify-content: space-between;
     height: calc(100vh - 110px);
     padding: 20px 8px;
+    position: relative;
 }

@@ -8,6 +8,7 @@
     height: 60px;
     top: 55px;
     right: 14px;
+    z-index: 1;
 }
 
 .menu-dropdown__arrow-top{

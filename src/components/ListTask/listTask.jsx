@@ -1,7 +1,9 @@
 import React from "react";
-import "./style.css";
 import Submit from "../Submit/submit";
 import Select from "../Select/select";
+import "./style.css";
+import NavigateList from "../NavigateList/navigateList";
+import SelectItem from "../SelectItem/selectItem";
 
 class TaskList extends React.Component{
     render(){
@@ -11,16 +13,12 @@ class TaskList extends React.Component{
             <div className="task-list">
                 <p className="task-list__title">{title}</p>
                 
-                { tasks.map(item => <div key={item.id} className="task-list__task">{item.name}</div>)}
+                <NavigateList tasks={tasks} mark={mark}/>
 
                 { type === "select" 
                   ? 
                   <Select mark={mark} onChange={onChange}>
-                        {refTasks.map(item =>
-                            <option key={item.id} value={item.id} className="task-list__input__item">
-                                {item.name}
-                            </option>
-                        )}
+                        {refTasks.map(item => <SelectItem key={item.id} item={item}/>)}
                   </Select> 
                   : 
                   <Submit mark={mark} submit={type === "submit" ? true : false } onClick={onClick} 

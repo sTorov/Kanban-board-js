@@ -1,0 +1,49 @@
+.task{
+    position: absolute;
+    background-color: white;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 25px;
+}
+
+.task__title{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.task__close-img{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+.task__edit-img{
+    position: absolute;
+    right: 65px;
+    top: 25px;
+    width: 25px;
+}
+.task__close-img:hover, .task__edit-img:hover{
+    cursor: pointer;
+}
+
+.task__description{
+    resize: none;
+    font-size: 18px;
+    font-family: 'Roboto',sans-serif;
+    letter-spacing: 0.4px;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 85%;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+.task__description:disabled{
+    background-color: white;
+    color: black;
+}

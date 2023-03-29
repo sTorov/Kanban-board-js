@@ -1,0 +1,18 @@
+.task-list__task{
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+}
+.task-list__task:hover{
+    cursor: pointer;
+    background-color: rgb(250, 250, 250);
+    outline: 1px solid gray;
+}
+.task-list__task:active{
+    color: black;
+}

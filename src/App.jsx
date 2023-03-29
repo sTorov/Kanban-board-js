@@ -21,8 +21,8 @@ class App extends React.Component {
   onHeaderMenuClick = () => {
     this.setState(state => ({
       menuClicked: !state.menuClicked,
-      menuSvg: !state.menuClicked ? arrowDown : arrowUp,
-      dropDownDisplayStyle: { display: !state.menuClicked ? "none" : "block" }
+      menuSvg: state.menuClicked ? arrowDown : arrowUp,
+      dropDownDisplayStyle: { display: state.menuClicked ? "none" : "block" }
     }));
   }
 
