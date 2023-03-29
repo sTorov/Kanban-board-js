@@ -8,6 +8,7 @@
     border-radius: 5px;
     font-size: 18px;
     padding: 25px;
+    min-width: 330px;
 }
 
 .task__title{
@@ -46,4 +47,14 @@
 .task__description:disabled{
     background-color: white;
     color: black;
+}
+@media(max-height:500px){
+    .task__description{
+        height: 75%;
+    }
+}
+@media(max-height:400px){
+    .task__description{
+        height: 65%;
+    }
 }

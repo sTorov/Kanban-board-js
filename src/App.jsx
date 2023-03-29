@@ -42,7 +42,7 @@ class App extends React.Component {
                 onClick={this.onHeaderMenuClick} 
                 menuSvg={menuSvg} 
                 dropDownDisplayStyle={dropDownDisplayStyle}/>
-                <Board countTask={this.setTaskCount}/>
+        <Board countTask={this.setTaskCount}/>
         <Footer activeTask={activeTaskCount} finishedTask={finishedTaskCount}/>
       </>
     );

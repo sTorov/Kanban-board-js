@@ -6,11 +6,19 @@ import NavigateList from "../NavigateList/navigateList";
 import SelectItem from "../SelectItem/selectItem";
 
 class TaskList extends React.Component{
+    componentDidMount(){
+        this.ref.scrollTop = this.ref.scrollHeight;
+    }
+
+    componentDidUpdate(){
+        this.ref.scrollTop = this.ref.scrollHeight;
+    }
+
     render(){
         const { tasks, title, type, refTasks, onClick, onChange, mark, inputRef } = this.props;
 
         return(
-            <div className="task-list">
+            <div className="task-list" ref={(e) => this.ref = e}>
                 <p className="task-list__title">{title}</p>
                 
                 <NavigateList tasks={tasks} mark={mark}/>

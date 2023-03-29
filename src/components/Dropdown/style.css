@@ -10,6 +10,13 @@
     right: 14px;
     z-index: 1;
 }
+/* @media(max-width:380px){
+    .menu-dropdown{
+        position: relative;
+        top: 55px;
+        left: 210px;
+    }
+} */
 
 .menu-dropdown__arrow-top{
     border: 10px solid transparent;

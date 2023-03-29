@@ -5,3 +5,15 @@
     padding: 20px 8px;
     position: relative;
 }
+@media(max-width:815px){
+    .board{
+        flex-wrap: wrap;
+        height: auto;
+        min-height: calc(100vh - 110px);
+    }
+}
+@media(max-width:350px){
+    .board{
+        min-width: 350px;
+    }
+}

@@ -9,7 +9,24 @@
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     flex-basis: 23%;
+    min-width: 175px;
 }
+@media(max-width:815px){
+    .task-list{
+        flex-basis: 45%;
+        margin-bottom: 20px;
+        max-height: 350px;
+    }
+}
+@media(max-width:530px){
+    .task-list{
+        width: 100%;
+        flex-basis: initial;
+        min-width: 330px;
+        margin-bottom: 30px;
+    }
+}
+
 .task-list::-webkit-scrollbar{
     width: 7px;
 }

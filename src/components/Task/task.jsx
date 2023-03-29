@@ -29,7 +29,6 @@ class Task extends React.Component{
         this.setState(state => ({
             editImg: state.editImg === editImg ? tapEditImg : editImg,
             textareaDisabled: !state.textareaDisabled,
-            // task: !state.textareaDisabled ? task : state.task
         }))
     }
 

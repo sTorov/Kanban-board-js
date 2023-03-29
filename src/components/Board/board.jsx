@@ -47,20 +47,20 @@ class Board extends React.Component{
         this.changeTypeList(index);
     }
 
-    handleChange = (event, index) => {
+    handleChange = (event, index) => {        
         const { data } = this.state;
-
+        
         const task = data[index - 1].issues.find(el => el.id === event.target.value);
         const taskIndex = data[index - 1].issues.indexOf(task);
         data[index - 1].issues.splice(taskIndex, 1);
         data[index].issues.push(task);
-
+        
         setData(data);
-
+        
         this.setState({
             data: data
         })
-
+        
         this.props.countTask(data);        
         this.changeTypeList(index);
     }

@@ -12,7 +12,7 @@ function Submit({ submit, disabled, onClick, mark, inputRef }){
         )
     } else {
         return <button className="task-list__button" type="button" 
-                    onClick={() => onClick(mark)} disabled={disabled}>
+                    onClick={() => onClick(mark, false)} disabled={disabled}>
                     <img className="task-list__button__img" src={buttonImg} alt="button-icon"/>
                     Add card
                 </button>
